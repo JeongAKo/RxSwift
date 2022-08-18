@@ -42,6 +42,7 @@ class WeatherViewController: UIViewController {
     return tempFormatter
   }()
   
+  
   @IBOutlet weak var cityLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var currentIcon: UIImageView!
