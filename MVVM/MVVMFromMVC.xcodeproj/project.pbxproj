@@ -18,6 +18,8 @@
 		5394F02521864DF5006E754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394F02321864DF4006E754C /* LaunchScreen.storyboard */; };
 		ABB8E32228ADBC54007A58ED /* MVVMInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABB8E32128ADBC54007A58ED /* MVVMInfo.plist */; };
 		ABB8E32428ADBC8A007A58ED /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E32328ADBC8A007A58ED /* Bundle.swift */; };
+		ABB8E32628AE8209007A58ED /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E32528AE8209007A58ED /* Box.swift */; };
+		ABB8E32828AE8AEE007A58ED /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E32728AE8AEE007A58ED /* WeatherViewModel.swift */; };
 		D2A5F2091F4A9144005CD714 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Weather.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 		5394F02421864DF4006E754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABB8E32128ADBC54007A58ED /* MVVMInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MVVMInfo.plist; sourceTree = "<group>"; };
 		ABB8E32328ADBC8A007A58ED /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		ABB8E32528AE8209007A58ED /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		ABB8E32728AE8AEE007A58ED /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* Grados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Weather.storyboard; sourceTree = "<group>"; };
 		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		6351BBCE23AE8A6A00B7C4DF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ABB8E32528AE8209007A58ED /* Box.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		6351BBCF23AE8A7000B7C4DF /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				ABB8E32728AE8AEE007A58ED /* WeatherViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -284,10 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3864C3F0237CC570000C9CA0 /* WeatherViewController.swift in Sources */,
+				ABB8E32828AE8AEE007A58ED /* WeatherViewModel.swift in Sources */,
 				ABB8E32428ADBC8A007A58ED /* Bundle.swift in Sources */,
 				3864C3EA237CB7FF000C9CA0 /* LocationGeocoder.swift in Sources */,
 				3864C3EC237CB938000C9CA0 /* Location.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				ABB8E32628AE8209007A58ED /* Box.swift in Sources */,
 				38159E9824352DD000819474 /* WeatherbitData.swift in Sources */,
 				38159E9A24352E8300819474 /* WeatherbitService.swift in Sources */,
 			);

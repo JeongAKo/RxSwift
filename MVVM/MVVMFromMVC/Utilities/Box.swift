@@ -33,13 +33,23 @@
 import Foundation
 
 
-extension Bundle {
-  var apiKey: String {
-    guard let file = self.path(forResource: "MVVMInfo", ofType: "plist") else { return "" }
-    
-    guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
-    guard let key = resource["API_KEY"] as? String else {fatalError("MVVM.plist에 API_KEY설정을 해주세요")}
-    return key
+final class Box<T> {
+  //1
+  typealias Listener = (T) -> Void
+  var listener: Listener?
+  //2
+  var value: T {
+    didSet {
+      listener?(value)
+    }
+  }
+  //3
+  init(_ value: T) {
+    self.value = value
+  }
+  //4
+  func bind(listener: Listener?) {
+    self.listener = listener
+    listener?(value)
   }
 }
-
